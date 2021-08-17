@@ -1,0 +1,430 @@
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.container-first {
+    width: 100%;
+    height: 110vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carrosel{
+    width: 100%;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.item-carrosel {
+    width: 100%;
+    height: 115vh;
+    position: absolute; 
+    z-index: -1;
+    opacity: 0;
+    transition: .5s;
+    filter: blur(5px);
+}
+
+.show {
+    opacity: 100%;
+}
+
+.carrosel {
+    position: relative;
+}
+
+.div-banner{
+    text-align: center;
+    width: 80%;
+    color: white;
+    position: absolute;
+}
+
+.banner-tittle {
+    font-size: 35px;
+}
+
+.banner-text {
+    text-align: justify;
+    font-size: 30px;
+}
+
+.div-banner a#btnLinkBanner {
+    text-decoration: none;
+}
+
+#btnCadastroBanner {
+    font-size: 25px;
+    background: white;
+    cursor: pointer;
+    border: none;
+    border-radius: 2px;
+    width: 200px;
+    height: 50px;
+    outline: none;
+    font-family: 'Teko', sans-serif;
+    transition: .5s;
+}
+
+#btnCadastroBanner:active, #btnCadastroBanner:hover {
+    color: white;
+    background: rgb(15, 27, 139);
+    transition: .5s;
+}
+
+.container-cards {
+    height: auto;
+    width: 100%;
+    background-color: white;
+    justify-content: center;
+    display: block;
+}
+
+.box-cards {
+    height: 100vh;
+    width: 100%;
+    justify-content: center;
+    display: flex;
+}
+
+.tittle-container-cards {
+    padding: 60px;
+    font-size: 35px;
+    justify-content: center;
+    display: flex;
+}
+
+.card {
+    width: 30%;
+    display: inline-block;
+    padding: 10px;
+    transition: .5s;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    transition: .5s;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+}
+
+.preco-card {
+    color: green;
+}
+
+.btnSaibaMais {
+    background-color: #4141ff;
+    color: white;
+    border: none;
+    border-radius: 2px;
+    width: 100px;
+    height: 30px;
+    cursor: pointer;
+    transition: .5s;
+    outline: none;
+}
+
+.card-description {
+    font-size: 20px;
+}
+
+.btnSaibaMais:active, .btnSaibaMais:hover {
+    background-color: blue;
+    box-shadow: 0px 5px 5px #7c7c7c;
+}
+
+.card img:active, .card img:hover {
+    transform: translate(0px, -5px);
+    transition: .5s;
+}
+
+#card-1 img:active, #card-1 img:hover {
+    box-shadow: -5px 5px 10px #7c7c7c;
+}
+
+#card-2 img:active, #card-2 img:hover {
+    box-shadow: 0px 5px 10px #7c7c7c;
+}
+
+#card-3 img:active, #card-3 img:hover {
+    box-shadow: 5px 5px 10px #7c7c7c;
+}
+
+.card button:active, .card button:hover {
+    transform: translate(0px, -5px);
+    transition: .2s;
+}
+
+.container-invite {
+    height: 350px;
+    width: 100%;
+    background-color: rgb(22, 22, 22);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tittle-invite {
+    font-size: 25px;
+}
+
+.body-invite {
+    display: block;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    line-height: 35px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 20px;
+}
+
+#inputEmail {
+    width: 300px;
+    height: 30px;
+    border-radius: 2px;
+    border: 1px solid white;
+    outline: none;
+    background-color: transparent;
+    color: rgb(0, 174, 255);
+    padding-left: 5px;
+}
+
+#inputEmail::-webkit-input-placeholder {
+    color: white;
+}
+
+.container-video {
+    height: 100vh;
+}
+
+#btnEnviarContato {
+    background-color: transparent;
+    border-radius: 15px;
+    border: 1px solid white;
+    color: white;
+    width: 150px;
+    height: 30px;
+    cursor: pointer;
+    transition: .5s;
+}
+
+#btnEnviarContato:active, #btnEnviarContato:hover {
+    background-color: white;
+    color: black;
+    transition: .5s;
+}
+
+.container-video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(-45deg, rgb(15, 15, 15), rgb(214, 214, 214));
+    background-size: 400%, 400%;
+    background-position: 100%, 100%;
+    height: auto;
+    animation: fade 10s ease-in-out infinite;
+    animation-direction: alternate;
+}
+
+@keyframes fade {
+    0% {
+        background-position: 0%, 50%;
+    } 
+    50% {
+        background-position: 50%, 50%;
+    } 
+    100% {
+        background-position: 100%, 50%;
+    } 
+
+}
+
+.container-video video {
+    outline: none;
+}
+
+.container-cursos {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.body-cursos {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.curso {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 50px;
+}
+
+.img-curso {
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    transition: .5s;
+}
+
+.img-curso:active, .img-curso:hover {
+    transform:scale(1.05);
+    transition: .5s;
+    box-shadow: 0px 3px 10px #7c7c7c;
+}
+
+.tittle-cursos {
+    font-size: 50px;
+    padding-bottom: 200px;
+}
+
+.tittle-curso-ind {
+    font-size: 25px;
+}
+
+.text-curso {
+    font-size: 17px;
+}
+
+#imgCurso1 {
+    background-image: url("../img/imgConfeiteiro.jpg");
+    background-size: 150%;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+#imgCurso2 {
+    background-image: url("../img/imgChefe.jpg");
+    background-size: 150%;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+#imgCurso3 {
+    background-image: url("../img/imgAjudante.jpg");
+    background-size: 150%;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+#imgCurso4 {
+    background-image: url("../img/imgIniciante.jpg");
+    background-size: 150%;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+@media (max-width: 900px) {
+    .box-cards {
+        flex-direction: column;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #card-1 img:active, #card-1 img:hover {
+        box-shadow: 0px 5px 5px #7c7c7c;
+    }
+    
+    #card-2 img:active, #card-2 img:hover {
+        box-shadow: 0px 5px 5px #7c7c7c;
+    }
+    
+    #card-3 img:active, #card-3 img:hover {
+        box-shadow: 0px 5px 5px #7c7c7c;
+    }
+
+    .container-cards {
+        height: auto;
+    }
+
+    .card {
+        width: 50%;
+    }
+
+    .container-cursos {
+        height: auto;
+    }
+
+    .body-cursos {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .curso {
+        margin-top: 20px;
+        align-items: center;
+        margin-right: 0;
+    }
+
+    .tittle-cursos {
+        padding-bottom: 0;
+    }
+}
+
+@media (max-width: 650px) {
+    .card {
+        width: 80%;
+    }
+
+    .div-banner {
+        z-index: -1;
+    }
+}
+
+@media (max-width: 400px) {
+    .banner-text {
+        font-size: 25px;
+    }
+
+    .tittle-invite {
+        font-size: 20px;
+    }
+    
+    .body-invite {
+        font-size: 15px;
+    }
+
+    #inputEmail {
+        width: 90%;
+    }
+
+    .tittle-cursos {
+        font-size: 30px;
+    }
+
+    .tittle-container-cards {
+        font-size: 23px;
+    }
+}

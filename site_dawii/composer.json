@@ -1,0 +1,13 @@
+{
+    "name": "vinicius/erp_micropro",
+    "authors": [
+        {
+            "name": "VinTesta",
+            "email": "viniciustestapassos@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {"model\\": "model/"}
+    }
+}
