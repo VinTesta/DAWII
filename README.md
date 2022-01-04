@@ -1,5 +1,5 @@
 # DAWII
-A project to my portfolio
+A project to my development
 - The project need the htaccess
 - #habilitando a reescrita---------------------------------------------------------
   RewriteEngine On
